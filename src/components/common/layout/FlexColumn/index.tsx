@@ -1,5 +1,5 @@
-import { IFlexContainerProps } from "@/components/common/layout/types";
-import { cn } from "@/lib/utils";
+import { IFlexContainerProps } from "@/components/common/Layout/types";
+import { cn } from "@/utils";
 
 export default function FlexColumn({
   className = "",

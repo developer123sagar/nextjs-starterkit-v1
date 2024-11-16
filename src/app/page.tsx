@@ -2,22 +2,29 @@
 
 import { useState } from "react";
 
+import Input from "@/components/common/FormUI/Input";
+import InputLabel from "@/components/common/FormUI/InputLabel";
 import Icon from "@/components/common/Icon";
 import IconButton from "@/components/common/IconButton";
-import { FlexColumn } from "@/components/common/layout";
-import Spinner from "@/components/common/spinner";
+import Label from "@/components/common/Label";
+import { FlexColumn } from "@/components/common/Layout";
+import Spinner from "@/components/common/Spinner";
 import { Button } from "@/components/ui/button";
 import Popover from "@/components/ui/popover";
+import RangeSlider from "@/components/ui/range-slider";
 import Skeleton from "@/components/ui/skeleton";
+import Switch from "@/components/ui/switch";
 import ToolTip from "@/components/ui/tooltip";
+import { useToast } from "@/hooks/use-toast";
 
 export default function Home() {
+  const { toast } = useToast();
   const checked = true;
   const [showPopOver, setShowPopOver] = useState(false);
 
   return (
     <div className="container space-y-4 p-10">
-      <h2>Hello, It&apos;s a Next.js Starter kit v1</h2>
+      <h3>Hello, It&apos;s a Next.js Starter kit v1</h3>
       <Icon name="close" />
       <IconButton
         name={checked ? "close" : "check_box_outline_blank"}
@@ -30,6 +37,12 @@ export default function Home() {
         className="mt-4"
         withLoader
         isLoading
+        onClick={() => {
+          toast({
+            title: "Sajjan Raj Vaidya Concert",
+            description: "I wish i could go to sajjan raj vaidya's concert",
+          });
+        }}
       >
         Submit
       </Button>
@@ -43,7 +56,6 @@ export default function Home() {
           show={showPopOver}
           triggerContent={
             <Button
-              variant="outline"
               className="w-fit"
               onClick={() => setShowPopOver(!showPopOver)}
             >
@@ -61,6 +73,19 @@ export default function Home() {
           }
         />
       </div>
+      <Label>Username</Label>
+      <RangeSlider />
+      <Switch />
+      <FlexColumn>
+        <InputLabel
+          id="user"
+          label="username"
+          asterisk
+          tooltipMessage="write user name"
+        />
+        <Input />
+      </FlexColumn>
+      <Button variant={"shimmer"}>Submit</Button>
     </div>
   );
 }

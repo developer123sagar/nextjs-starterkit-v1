@@ -22,28 +22,16 @@ export default {
       },
       colors: {
         primary: {
-          50: "#E3F2FF",
-          100: "#BADFFF",
-          200: "#5BB6FF",
-          300: "#0097FF",
-          400: "#0088F8",
-          500: "#0077E4",
-          600: "#0664D2",
-          700: "#0A45B3",
-          800: "#003675",
-          900: "#0F204C",
+          50: "#FAEAE9",
+          300: "#E5F3F7",
+          400: "#FF7854",
+          500: "#FF7854",
+          600: "#D84F2C",
+          700: "#D84F2C",
         },
         secondary: {
-          50: "#FFF8E3",
-          100: "#FFEDB7",
-          200: "#FFE28A",
-          300: "#FFD85C",
-          400: "#FFCE3D",
-          500: "#FFC52F",
-          600: "#FFB72A",
-          700: "#FFA527",
-          800: "#FF9525",
-          900: "#FF7722",
+          50: "#D7D7D7",
+          100: "#FAEAE9",
         },
         grey: {
           50: "#FAFAFA",
@@ -56,6 +44,7 @@ export default {
           700: "#616161",
           800: "#484848",
           900: "#212121",
+          950: "#333333",
         },
       },
       fontSize: {
@@ -120,6 +109,7 @@ export default {
         jump: "jump .5s both",
         "jump-in": "jump-in .5s both",
         "jump-out": "jump-out .5s both",
+        shimmer: "shimmer 2s linear infinite",
       },
 
       keyframes: {
@@ -227,6 +217,14 @@ export default {
           },
           "100%": {
             transform: "scale(0%)",
+          },
+        },
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
           },
         },
       },
