@@ -4,13 +4,15 @@ A modern **Next.js** starter kit with **TypeScript**, designed to streamline dev
 
 ## Features
 
-- **Next.js 15**: For powerful SSR, ISR, and dynamic routing.
-- **TypeScript**: For type safety and enhanced development experience.
-- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
-- **Prettier**: Ensures consistent code formatting with `prettier-plugin-tailwindcss` for class sorting.
-- **ESLint**: Includes Next.js and Prettier configurations for linting.
-- **Husky**: Pre-commit hooks for a better Git workflow.
-- **Import Sorting**: Automatically organizes imports with `@trivago/prettier-plugin-sort-imports`.
+- **Next.js 15**: Powerful server-side rendering (SSR), incremental static regeneration (ISR), and dynamic routing for building fast, production-ready apps.
+- **TypeScript**: Full type safety and enhanced developer experience for robust, error-free code.
+- **Tailwind CSS**: A utility-first CSS framework that enables rapid UI development.
+- **Prettier**: Automatically formats your code for consistency, with `prettier-plugin-tailwindcss` for sorting Tailwind classes.
+- **ESLint**: Linting setup with custom configurations for Next.js and Prettier to enforce code quality.
+- **Husky**: Pre-commit hooks to improve your Git workflow and ensure clean commits.
+- **Import Sorting**: Automatic import sorting with `@trivago/prettier-plugin-sort-imports` to keep your imports neat and organized.
+- **Radix UI**: Includes accessible UI components such as Popovers, Sliders, Switches, Toasts, and Tooltips from Radix UI for building robust UI elements.
+- **Redux Toolkit**: Powerful state management tool to handle global state with ease, integrated with React-Redux.
 
 ## Getting Started
 
@@ -22,7 +24,7 @@ A modern **Next.js** starter kit with **TypeScript**, designed to streamline dev
 ### Installation
 
 1. Clone the repository:
-   ```
+   ```bash
    git clone https://github.com/developer123sagar/nextjs-typescript-starterkit-v1.git
    cd nextjs-typescript-starterkit-v1
    ```
