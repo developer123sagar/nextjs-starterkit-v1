@@ -44,7 +44,8 @@ A modern **Next.js** starter kit with **TypeScript**, designed to streamline dev
 
 ## Folder Structure
 
-![alt text](./public/folder-structure.png)
+<img width="247" alt="image" src="https://github.com/user-attachments/assets/5754888d-5e05-4e08-846b-f384c5e43631">
+
 
 ### Contribution
 
