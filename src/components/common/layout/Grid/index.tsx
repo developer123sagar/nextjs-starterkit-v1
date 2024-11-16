@@ -1,5 +1,5 @@
-import { IGridContainerProps } from "@/components/common/layout/types";
-import { cn } from "@/lib/utils";
+import { IGridContainerProps } from "@/components/common/Layout/types";
+import { cn } from "@/utils";
 
 export default function Grid({
   className = "",

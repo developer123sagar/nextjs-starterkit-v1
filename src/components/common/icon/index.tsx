@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils";
 
 interface IIconProps extends React.HTMLAttributes<HTMLElement> {
   name: string;
@@ -26,7 +26,7 @@ export default function Icon({
     >
       <i
         className={cn(
-          "text-icon-sm lg:text-icon-md cursor-pointer select-none duration-300",
+          "lg:text-icon-md cursor-pointer select-none text-icon-sm duration-300",
           iconClassName,
           className
         )}

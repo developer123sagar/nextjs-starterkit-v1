@@ -41,16 +41,16 @@
 
 @layer components {
   .input {
-    @apply border-grey-300 text-grey-900 focus:border-grey-800 focus:text-grey-700 m-0 block h-[48px] w-full rounded-lg border border-solid bg-white bg-clip-padding px-3 py-[13px] font-normal transition ease-in-out focus:bg-white focus:outline-none;
+    @apply m-0 block h-[48px] w-full rounded-lg border border-solid border-grey-300 bg-white bg-clip-padding px-3 py-[13px] font-normal text-grey-900 transition ease-in-out focus:border-grey-800 focus:bg-white focus:text-grey-700 focus:outline-none;
   }
   .label {
-    @apply text-grey-800 flex w-full text-[15px] font-bold;
+    @apply flex w-full text-[15px] font-bold text-grey-800;
   }
   .input.input-disabled {
-    @apply bg-grey-100 text-grey-400 cursor-not-allowed select-none;
+    @apply cursor-not-allowed select-none bg-grey-100 text-grey-400;
   }
   .label.label-disabled {
-    @apply text-grey-300 cursor-not-allowed select-none;
+    @apply cursor-not-allowed select-none text-grey-300;
   }
   .btn-text {
     @apply text-[13.4px] font-bold;
@@ -106,60 +106,3 @@
     }
   }
 }
-
-.color-input {
-  -webkit-appearance: none;
-  padding: 0;
-  border: none;
-  border-radius: 8px;
-  width: 40px;
-  height: 40px;
-}
-.color-input::-webkit-color-swatch {
-  border: none;
-  border-radius: 8px;
-  padding: 0;
-}
-.color-input::-webkit-color-swatch-wrapper {
-  border: none;
-  border-radius: 8px;
-  padding: 0;
-}
-
-.icon-lg {
-  @apply text-[27px];
-}
-
-.icon-md {
-  @apply text-[24px];
-}
-
-table thead th:first-child {
-  position: sticky;
-  left: 0;
-  z-index: 0.1;
-}
-
-table tbody td:first-child {
-  position: sticky;
-  left: 0;
-  z-index: 0.1;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-  background-color: white;
-}
-
-/* table tbody td:last-child {
-  position: sticky;
-  right: 0;
-  z-index: 0.1;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-  background-color: white;
-} */
-
-table tr:nth-child(2n) > td:nth-child(1) {
-  background-color: #f5f5f5;
-}
-
-/* table tr:nth-child(2n) > td:last-child {
-  background-color: #f5f5f5;
-} */

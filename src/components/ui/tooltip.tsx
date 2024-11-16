@@ -9,8 +9,8 @@ import {
 } from "@radix-ui/react-tooltip";
 
 import Icon from "@/components/common/Icon";
-import { FlexColumn } from "@/components/common/layout";
-import { cn } from "@/lib/utils";
+import { FlexColumn } from "@/components/common/Layout";
+import { cn } from "@/utils";
 
 interface ToolTipProps {
   name: string;
@@ -50,7 +50,7 @@ export default function ToolTip({
             <Icon
               name={name}
               className={cn(
-                "text-grey-500 hover:text-primary-400 hover:animate-pulse",
+                "text-grey-500 hover:text-primary-400",
                 iconClassName
               )}
             />
@@ -58,7 +58,7 @@ export default function ToolTip({
           {message && (
             <TooltipContent
               className={cn(
-                "bg-grey-900 max-w-xs select-none rounded px-[15px] py-[10px] text-sm leading-none text-white",
+                "max-w-xs select-none rounded bg-grey-900 px-[15px] py-[10px] text-sm leading-none text-white",
                 "shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px]",
                 "will-change-[transform,opacity]"
               )}

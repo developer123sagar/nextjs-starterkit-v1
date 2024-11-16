@@ -4,18 +4,16 @@ import { Slot } from "@radix-ui/react-slot";
 import { cva, VariantProps } from "class-variance-authority";
 
 import Icon from "@/components/common/Icon";
-import Spinner from "@/components/common/spinner";
-import { cn } from "@/lib/utils";
+import Spinner from "@/components/common/Spinner";
+import { cn } from "@/utils";
 
 const buttonVariants = cva(
-  `inline-flex items-center justify-center rounded-md text-sm 
-  font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 
-  focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none`,
+  "inline-flex items-center justify-center rounded-md text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none",
   {
     variants: {
       variant: {
         default:
-          "bg-primary-400 text-white hover:shadow-top hover:shadow-primary-400",
+          "bg-primary-400 text-white hover:shadow-top hover:shadow-primary-600",
         destructive:
           "bg-red-500 text-white hover:shadow-top hover:shadow-red-500",
         outline: `border text-primary-400 border-primary-400 border-input 
@@ -26,6 +24,8 @@ const buttonVariants = cva(
           "text-primary-400 font-bold disabled:text-grey-600 hover:text-primary-500",
         link: `font-bold underline-offset-4 underline hover:no-underline
          text-primary-100 hover:shadow hover:shadow-primary-400`,
+        shimmer: `animate-shimmer bg-[linear-gradient(110deg,#FF7854,45%,#F6F5F2,48%,#FF7854)] 
+         bg-[length:200%_100%] text-white`,
       },
       size: {
         default: "h-9 py-2 px-3",
@@ -91,7 +91,7 @@ function Button({
         <Icon className={cn(iconClassName, "!text-icon-sm")} name={leftIcon} />
       )}
       {children}
-      {rightIcon && (
+      {rightIcon && !isLoading && (
         <Icon className={cn(iconClassName, "!text-icon-sm")} name={rightIcon} />
       )}
       {withLoader && isLoading && <Spinner />}
