@@ -42,16 +42,7 @@ A modern **Next.js** starter kit with **TypeScript**, designed to streamline dev
 
 ## Folder Structure
 
-├── src/ # Source code
-│ ├── components/ # Reusable components
-│ ├── app/ # Next.js app router
-│ ├── assets/ # Static files like image,css,themes
-│ └── lib/ # Utility functions and helpers
-├── public/ # Static files
-├── .eslintrc.json # ESLint configuration
-├── .prettierrc.json # Prettier configuration
-├── tailwind.config.ts # Tailwind CSS configuration
-└── tsconfig.json # TypeScript configuration
+![alt text](./public/folder-structure.png)
 
 ### Contribution
 
