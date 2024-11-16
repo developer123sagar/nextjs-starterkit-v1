@@ -3,7 +3,7 @@ import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, VariantProps } from "class-variance-authority";
 
-import Icon from "@/components/common/icon";
+import Icon from "@/components/common/Icon";
 import Spinner from "@/components/common/spinner";
 import { cn } from "@/lib/utils";
 
@@ -94,7 +94,7 @@ function Button({
       {rightIcon && (
         <Icon className={cn(iconClassName, "!text-icon-sm")} name={rightIcon} />
       )}
-      {withLoader && isLoading && <Spinner className="fill-primary-500" />}
+      {withLoader && isLoading && <Spinner />}
     </ButtonContent>
   );
 }
