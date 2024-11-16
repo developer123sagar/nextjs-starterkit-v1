@@ -22,7 +22,37 @@ A modern **Next.js** starter kit with **TypeScript**, designed to streamline dev
 ### Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/nextjs-typescript-starterkit-v1.git
+   ```
+   git clone https://github.com/developer123sagar/nextjs-typescript-starterkit-v1.git
    cd nextjs-typescript-starterkit-v1
    ```
+2. Install dependencies:
+   ```
+   npm install
+   # or
+   yarn install
+   ```
+3. Start the development server:
+   ```
+   npm run dev
+   # or
+   yarn dev
+   ```
+4. Open your browser at http://localhost:3000
+
+## Folder Structure
+
+├── src/ # Source code
+│ ├── components/ # Reusable components
+│ ├── app/ # Next.js app router
+│ ├── assets/ # Static files like image,css,themes
+│ └── lib/ # Utility functions and helpers
+├── public/ # Static files
+├── .eslintrc.json # ESLint configuration
+├── .prettierrc.json # Prettier configuration
+├── tailwind.config.ts # Tailwind CSS configuration
+└── tsconfig.json # TypeScript configuration
+
+### Contribution
+
+Feel free to submit issues and pull requests. Contributions are welcome!
