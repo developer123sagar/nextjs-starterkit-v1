@@ -11,8 +11,8 @@ A modern **Next.js** starter kit with **TypeScript**, designed to streamline dev
 - **ESLint**: Linting setup with custom configurations for Next.js and Prettier to enforce code quality.
 - **Husky**: Pre-commit hooks to improve your Git workflow and ensure clean commits.
 - **Import Sorting**: Automatic import sorting with `@trivago/prettier-plugin-sort-imports` to keep your imports neat and organized.
-- **Radix UI**: Includes accessible UI components such as Popovers, Sliders, Switches, Toasts, and Tooltips from Radix UI for building robust UI elements.
-- **Redux Toolkit**: Powerful state management tool to handle global state with ease, integrated with React-Redux.
+- **Radix UI**: Accessible UI components such as Popovers, Sliders, Switches, Toasts, and Tooltips for building robust UI elements.
+- **Prisma ORM**: Powerful ORM for handling database interactions with an easy-to-use API and seamless TypeScript integration.
 
 ## Getting Started
 
@@ -46,6 +46,9 @@ A modern **Next.js** starter kit with **TypeScript**, designed to streamline dev
 
 <img width="247" alt="image" src="https://github.com/user-attachments/assets/5754888d-5e05-4e08-846b-f384c5e43631">
 
+### Changes:
+
+- Added **Prisma ORM** to the **Features** section to highlight its inclusion in your project.
 
 ### Contribution
 
