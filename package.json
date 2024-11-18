@@ -11,6 +11,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@prisma/client": "^5.22.0",
     "@radix-ui/react-popover": "^1.1.2",
     "@radix-ui/react-slider": "^1.2.1",
     "@radix-ui/react-slot": "^1.1.0",
