@@ -25,7 +25,6 @@ export default {
           50: "#FAEAE9",
           300: "#E5F3F7",
           400: "#FF7854",
-          500: "#FF7854",
           600: "#D84F2C",
           700: "#D84F2C",
         },
@@ -110,6 +109,7 @@ export default {
         "jump-in": "jump-in .5s both",
         "jump-out": "jump-out .5s both",
         shimmer: "shimmer 2s linear infinite",
+        "caret-blink": "caret-blink 1.25s ease-out infinite",
       },
 
       keyframes: {
@@ -226,6 +226,10 @@ export default {
           to: {
             backgroundPosition: "-200% 0",
           },
+        },
+        "caret-blink": {
+          "0%,70%,100%": { opacity: "1" },
+          "20%,50%": { opacity: "0" },
         },
       },
     },

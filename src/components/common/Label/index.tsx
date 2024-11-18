@@ -17,7 +17,7 @@ export default function Label({
 }: ILabelProps) {
   return (
     <label
-      className={cn("text-sm text-grey-800", className)}
+      className={cn("text-sm font-medium text-grey-800", className)}
       htmlFor={htmlFor?.toString()}
     >
       {children}

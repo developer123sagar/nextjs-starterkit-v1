@@ -21,7 +21,7 @@ const buttonVariants = cva(
         secondary:
           "bg-white text-primary-400 border border-primary-400 hover:shadow-top",
         ghost:
-          "text-primary-400 font-bold disabled:text-grey-600 hover:text-primary-500",
+          "text-primary-400 font-bold disabled:text-grey-600 hover:text-primary-400",
         link: `font-bold underline-offset-4 underline hover:no-underline
          text-primary-100 hover:shadow hover:shadow-primary-400`,
         shimmer: `animate-shimmer bg-[linear-gradient(110deg,#FF7854,45%,#F6F5F2,48%,#FF7854)] 
