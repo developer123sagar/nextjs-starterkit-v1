@@ -1,35 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.text {
-  @apply font-primary tracking-normal;
-}
-
 @layer base {
   html {
     @apply text-grey-800;
   }
   h1 {
-    @apply text text-[3.625rem] font-normal leading-[4rem];
+    @apply text-[3.625rem] font-normal leading-[4rem];
   }
   h2 {
-    @apply text text-[2.375rem] font-bold leading-[2.75rem];
+    @apply text-[2.375rem] font-bold leading-[2.75rem];
   }
   h3 {
-    @apply text text-[1.625rem] font-bold leading-[2rem];
+    @apply text-[1.625rem] font-bold leading-[2rem];
   }
   h4 {
-    @apply text text-[1.25rem] font-bold leading-[1.75rem];
+    @apply text-[1.25rem] font-bold leading-[1.75rem];
   }
   h5 {
-    @apply text text-[1.0625rem] font-bold leading-[1.375];
+    @apply text-[1.0625rem] font-bold leading-[1.375];
   }
   h6 {
-    @apply text text-[1rem] leading-[1.25];
-  }
-  p {
-    @apply text;
+    @apply text-[1rem] leading-[1.25];
   }
   span {
     @apply text-body-md;
